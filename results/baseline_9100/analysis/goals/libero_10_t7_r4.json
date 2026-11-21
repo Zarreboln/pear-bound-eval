@@ -1,0 +1,234 @@
+{
+ "name": "libero_10_t7_r4",
+ "instruction": "put both the alphabet soup and the cream cheese box in the basket",
+ "goals": [
+  "in alphabet_soup_1 basket_1_contain_region",
+  "in cream_cheese_1 basket_1_contain_region"
+ ],
+ "trace": [
+  {
+   "round": 0,
+   "step": 0,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 1,
+   "step": 14,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 2,
+   "step": 19,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 3,
+   "step": 24,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 4,
+   "step": 46,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 5,
+   "step": 56,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 6,
+   "step": 71,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 7,
+   "step": 79,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 8,
+   "step": 90,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 9,
+   "step": 98,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 10,
+   "step": 105,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 11,
+   "step": 116,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 12,
+   "step": 129,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 13,
+   "step": 143,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 14,
+   "step": 155,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 15,
+   "step": 165,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 16,
+   "step": 178,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 17,
+   "step": 184,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 18,
+   "step": 187,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 19,
+   "step": 207,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 20,
+   "step": 210,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 21,
+   "step": 218,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 22,
+   "step": 232,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 23,
+   "step": 250,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 24,
+   "step": 260,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 25,
+   "step": 269,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 26,
+   "step": 273,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 27,
+   "step": 280,
+   "goals": [
+    true,
+    true
+   ]
+  }
+ ]
+}

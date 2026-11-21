@@ -1,0 +1,194 @@
+{
+ "name": "libero_10_t4_r5",
+ "instruction": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+ "goals": [
+  "on porcelain_mug_1 plate_1",
+  "on white_yellow_mug_1 plate_2"
+ ],
+ "trace": [
+  {
+   "round": 0,
+   "step": 0,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 1,
+   "step": 17,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 2,
+   "step": 21,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 3,
+   "step": 26,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 4,
+   "step": 43,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 5,
+   "step": 47,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 6,
+   "step": 60,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 7,
+   "step": 74,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 8,
+   "step": 86,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 9,
+   "step": 106,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 10,
+   "step": 117,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 11,
+   "step": 131,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 12,
+   "step": 141,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 13,
+   "step": 147,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 14,
+   "step": 164,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 15,
+   "step": 180,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 16,
+   "step": 184,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 17,
+   "step": 187,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 18,
+   "step": 188,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 19,
+   "step": 200,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 20,
+   "step": 206,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 21,
+   "step": 222,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 22,
+   "step": 225,
+   "goals": [
+    true,
+    false
+   ]
+  }
+ ]
+}

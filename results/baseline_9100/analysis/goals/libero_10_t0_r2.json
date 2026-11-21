@@ -1,0 +1,178 @@
+{
+ "name": "libero_10_t0_r2",
+ "instruction": "put both the alphabet soup and the tomato sauce in the basket",
+ "goals": [
+  "in alphabet_soup_1 basket_1_contain_region",
+  "in tomato_sauce_1 basket_1_contain_region"
+ ],
+ "trace": [
+  {
+   "round": 0,
+   "step": 0,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 1,
+   "step": 10,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 2,
+   "step": 17,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 3,
+   "step": 37,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 4,
+   "step": 45,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 5,
+   "step": 59,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 6,
+   "step": 77,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 7,
+   "step": 84,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 8,
+   "step": 89,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 9,
+   "step": 101,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 10,
+   "step": 104,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 11,
+   "step": 115,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 12,
+   "step": 127,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 13,
+   "step": 163,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 14,
+   "step": 168,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 15,
+   "step": 186,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 16,
+   "step": 194,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 17,
+   "step": 209,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 18,
+   "step": 234,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 19,
+   "step": 246,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 20,
+   "step": 253,
+   "goals": [
+    true,
+    true
+   ]
+  }
+ ]
+}

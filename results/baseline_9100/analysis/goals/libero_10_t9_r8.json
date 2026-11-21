@@ -1,0 +1,250 @@
+{
+ "name": "libero_10_t9_r8",
+ "instruction": "put the yellow and white mug in the microwave and close it",
+ "goals": [
+  "in white_yellow_mug_1 microwave_1_heating_region",
+  "close microwave_1"
+ ],
+ "trace": [
+  {
+   "round": 0,
+   "step": 0,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 1,
+   "step": 11,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 2,
+   "step": 23,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 3,
+   "step": 46,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 4,
+   "step": 61,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 5,
+   "step": 75,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 6,
+   "step": 91,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 7,
+   "step": 100,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 8,
+   "step": 128,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 9,
+   "step": 132,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 10,
+   "step": 148,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 11,
+   "step": 158,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 12,
+   "step": 172,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 13,
+   "step": 191,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 14,
+   "step": 200,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 15,
+   "step": 211,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 16,
+   "step": 219,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 17,
+   "step": 232,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 18,
+   "step": 247,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 19,
+   "step": 254,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 20,
+   "step": 275,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 21,
+   "step": 284,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 22,
+   "step": 292,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 23,
+   "step": 310,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 24,
+   "step": 321,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 25,
+   "step": 326,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 26,
+   "step": 334,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 27,
+   "step": 340,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 28,
+   "step": 356,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 29,
+   "step": 369,
+   "goals": [
+    false,
+    false
+   ]
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+{
+ "name": "libero_10_t5_r1",
+ "instruction": "pick up the book and place it in the back compartment of the caddy",
+ "goals": [
+  "in black_book_1 desk_caddy_1_back_contain_region"
+ ],
+ "trace": [
+  {
+   "round": 0,
+   "step": 0,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 1,
+   "step": 10,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 2,
+   "step": 18,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 3,
+   "step": 38,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 4,
+   "step": 48,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 5,
+   "step": 66,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 6,
+   "step": 83,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 7,
+   "step": 96,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 8,
+   "step": 105,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 9,
+   "step": 114,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 10,
+   "step": 119,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 11,
+   "step": 124,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 12,
+   "step": 131,
+   "goals": [
+    true
+   ]
+  }
+ ]
+}

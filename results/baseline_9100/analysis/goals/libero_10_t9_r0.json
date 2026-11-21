@@ -1,0 +1,186 @@
+{
+ "name": "libero_10_t9_r0",
+ "instruction": "put the yellow and white mug in the microwave and close it",
+ "goals": [
+  "in white_yellow_mug_1 microwave_1_heating_region",
+  "close microwave_1"
+ ],
+ "trace": [
+  {
+   "round": 0,
+   "step": 0,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 1,
+   "step": 16,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 2,
+   "step": 22,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 3,
+   "step": 43,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 4,
+   "step": 64,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 5,
+   "step": 81,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 6,
+   "step": 93,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 7,
+   "step": 113,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 8,
+   "step": 120,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 9,
+   "step": 123,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 10,
+   "step": 152,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 11,
+   "step": 159,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 12,
+   "step": 164,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 13,
+   "step": 168,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 14,
+   "step": 176,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 15,
+   "step": 184,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 16,
+   "step": 187,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 17,
+   "step": 193,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 18,
+   "step": 209,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 19,
+   "step": 238,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 20,
+   "step": 244,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 21,
+   "step": 253,
+   "goals": [
+    false,
+    false
+   ]
+  }
+ ]
+}

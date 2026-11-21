@@ -1,0 +1,178 @@
+{
+ "name": "libero_10_t1_r8",
+ "instruction": "put both the cream cheese box and the butter in the basket",
+ "goals": [
+  "in cream_cheese_1 basket_1_contain_region",
+  "in butter_1 basket_1_contain_region"
+ ],
+ "trace": [
+  {
+   "round": 0,
+   "step": 0,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 1,
+   "step": 10,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 2,
+   "step": 31,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 3,
+   "step": 39,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 4,
+   "step": 55,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 5,
+   "step": 69,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 6,
+   "step": 78,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 7,
+   "step": 91,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 8,
+   "step": 95,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 9,
+   "step": 107,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 10,
+   "step": 119,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 11,
+   "step": 141,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 12,
+   "step": 159,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 13,
+   "step": 165,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 14,
+   "step": 186,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 15,
+   "step": 194,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 16,
+   "step": 211,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 17,
+   "step": 234,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 18,
+   "step": 248,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 19,
+   "step": 257,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 20,
+   "step": 265,
+   "goals": [
+    true,
+    true
+   ]
+  }
+ ]
+}

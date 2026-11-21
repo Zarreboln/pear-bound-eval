@@ -1,0 +1,258 @@
+{
+ "name": "libero_10_t7_r3",
+ "instruction": "put both the alphabet soup and the cream cheese box in the basket",
+ "goals": [
+  "in alphabet_soup_1 basket_1_contain_region",
+  "in cream_cheese_1 basket_1_contain_region"
+ ],
+ "trace": [
+  {
+   "round": 0,
+   "step": 0,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 1,
+   "step": 13,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 2,
+   "step": 17,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 3,
+   "step": 40,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 4,
+   "step": 50,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 5,
+   "step": 70,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 6,
+   "step": 80,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 7,
+   "step": 89,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 8,
+   "step": 96,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 9,
+   "step": 100,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 10,
+   "step": 112,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 11,
+   "step": 124,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 12,
+   "step": 129,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 13,
+   "step": 142,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 14,
+   "step": 150,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 15,
+   "step": 157,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 16,
+   "step": 163,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 17,
+   "step": 175,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 18,
+   "step": 188,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 19,
+   "step": 198,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 20,
+   "step": 207,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 21,
+   "step": 219,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 22,
+   "step": 229,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 23,
+   "step": 238,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 24,
+   "step": 254,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 25,
+   "step": 263,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 26,
+   "step": 277,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 27,
+   "step": 291,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 28,
+   "step": 301,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 29,
+   "step": 310,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 30,
+   "step": 314,
+   "goals": [
+    true,
+    true
+   ]
+  }
+ ]
+}

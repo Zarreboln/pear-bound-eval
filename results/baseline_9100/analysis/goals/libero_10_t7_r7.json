@@ -1,0 +1,186 @@
+{
+ "name": "libero_10_t7_r7",
+ "instruction": "put both the alphabet soup and the cream cheese box in the basket",
+ "goals": [
+  "in alphabet_soup_1 basket_1_contain_region",
+  "in cream_cheese_1 basket_1_contain_region"
+ ],
+ "trace": [
+  {
+   "round": 0,
+   "step": 0,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 1,
+   "step": 8,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 2,
+   "step": 13,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 3,
+   "step": 32,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 4,
+   "step": 40,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 5,
+   "step": 58,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 6,
+   "step": 72,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 7,
+   "step": 82,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 8,
+   "step": 91,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 9,
+   "step": 97,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 10,
+   "step": 101,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 11,
+   "step": 116,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 12,
+   "step": 119,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 13,
+   "step": 130,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 14,
+   "step": 142,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 15,
+   "step": 163,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 16,
+   "step": 184,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 17,
+   "step": 192,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 18,
+   "step": 213,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 19,
+   "step": 231,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 20,
+   "step": 235,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 21,
+   "step": 243,
+   "goals": [
+    true,
+    true
+   ]
+  }
+ ]
+}

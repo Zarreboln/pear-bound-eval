@@ -1,0 +1,362 @@
+{
+ "name": "libero_10_t3_r7",
+ "instruction": "put the black bowl in the bottom drawer of the cabinet and close it",
+ "goals": [
+  "close white_cabinet_1_bottom_region",
+  "in akita_black_bowl_1 white_cabinet_1_bottom_region"
+ ],
+ "trace": [
+  {
+   "round": 0,
+   "step": 0,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 1,
+   "step": 10,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 2,
+   "step": 24,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 3,
+   "step": 33,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 4,
+   "step": 40,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 5,
+   "step": 62,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 6,
+   "step": 73,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 7,
+   "step": 88,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 8,
+   "step": 100,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 9,
+   "step": 101,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 10,
+   "step": 105,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 11,
+   "step": 123,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 12,
+   "step": 142,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 13,
+   "step": 157,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 14,
+   "step": 163,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 15,
+   "step": 169,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 16,
+   "step": 174,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 17,
+   "step": 178,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 18,
+   "step": 181,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 19,
+   "step": 184,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 20,
+   "step": 200,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 21,
+   "step": 203,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 22,
+   "step": 208,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 23,
+   "step": 214,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 24,
+   "step": 217,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 25,
+   "step": 222,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 26,
+   "step": 316,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 27,
+   "step": 331,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 28,
+   "step": 346,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 29,
+   "step": 363,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 30,
+   "step": 375,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 31,
+   "step": 389,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 32,
+   "step": 395,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 33,
+   "step": 398,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 34,
+   "step": 402,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 35,
+   "step": 410,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 36,
+   "step": 418,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 37,
+   "step": 428,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 38,
+   "step": 444,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 39,
+   "step": 462,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 40,
+   "step": 479,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 41,
+   "step": 503,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 42,
+   "step": 518,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 43,
+   "step": 520,
+   "goals": [
+    false,
+    false
+   ]
+  }
+ ]
+}

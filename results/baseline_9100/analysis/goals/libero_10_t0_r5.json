@@ -1,0 +1,234 @@
+{
+ "name": "libero_10_t0_r5",
+ "instruction": "put both the alphabet soup and the tomato sauce in the basket",
+ "goals": [
+  "in alphabet_soup_1 basket_1_contain_region",
+  "in tomato_sauce_1 basket_1_contain_region"
+ ],
+ "trace": [
+  {
+   "round": 0,
+   "step": 0,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 1,
+   "step": 10,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 2,
+   "step": 21,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 3,
+   "step": 28,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 4,
+   "step": 49,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 5,
+   "step": 53,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 6,
+   "step": 61,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 7,
+   "step": 79,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 8,
+   "step": 89,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 9,
+   "step": 102,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 10,
+   "step": 110,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 11,
+   "step": 116,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 12,
+   "step": 121,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 13,
+   "step": 139,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 14,
+   "step": 142,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 15,
+   "step": 155,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 16,
+   "step": 172,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 17,
+   "step": 191,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 18,
+   "step": 203,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 19,
+   "step": 211,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 20,
+   "step": 234,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 21,
+   "step": 237,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 22,
+   "step": 245,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 23,
+   "step": 264,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 24,
+   "step": 281,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 25,
+   "step": 293,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 26,
+   "step": 301,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 27,
+   "step": 314,
+   "goals": [
+    true,
+    true
+   ]
+  }
+ ]
+}

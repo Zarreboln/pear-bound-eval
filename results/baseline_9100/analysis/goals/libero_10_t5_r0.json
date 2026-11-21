@@ -1,0 +1,198 @@
+{
+ "name": "libero_10_t5_r0",
+ "instruction": "pick up the book and place it in the back compartment of the caddy",
+ "goals": [
+  "in black_book_1 desk_caddy_1_back_contain_region"
+ ],
+ "trace": [
+  {
+   "round": 0,
+   "step": 0,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 1,
+   "step": 17,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 2,
+   "step": 23,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 3,
+   "step": 43,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 4,
+   "step": 47,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 5,
+   "step": 51,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 6,
+   "step": 59,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 7,
+   "step": 76,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 8,
+   "step": 95,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 9,
+   "step": 110,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 10,
+   "step": 126,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 11,
+   "step": 139,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 12,
+   "step": 150,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 13,
+   "step": 154,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 14,
+   "step": 173,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 15,
+   "step": 178,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 16,
+   "step": 183,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 17,
+   "step": 189,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 18,
+   "step": 196,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 19,
+   "step": 202,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 20,
+   "step": 207,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 21,
+   "step": 211,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 22,
+   "step": 241,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 23,
+   "step": 270,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 24,
+   "step": 274,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 25,
+   "step": 280,
+   "goals": [
+    false
+   ]
+  },
+  {
+   "round": 26,
+   "step": 291,
+   "goals": [
+    false
+   ]
+  }
+ ]
+}

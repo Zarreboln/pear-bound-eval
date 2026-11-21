@@ -1,0 +1,282 @@
+{
+ "name": "libero_10_t1_r5",
+ "instruction": "put both the cream cheese box and the butter in the basket",
+ "goals": [
+  "in cream_cheese_1 basket_1_contain_region",
+  "in butter_1 basket_1_contain_region"
+ ],
+ "trace": [
+  {
+   "round": 0,
+   "step": 0,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 1,
+   "step": 9,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 2,
+   "step": 14,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 3,
+   "step": 35,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 4,
+   "step": 43,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 5,
+   "step": 57,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 6,
+   "step": 70,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 7,
+   "step": 79,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 8,
+   "step": 90,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 9,
+   "step": 94,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 10,
+   "step": 107,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 11,
+   "step": 110,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 12,
+   "step": 121,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 13,
+   "step": 163,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 14,
+   "step": 174,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 15,
+   "step": 183,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 16,
+   "step": 193,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 17,
+   "step": 196,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 18,
+   "step": 206,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 19,
+   "step": 213,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 20,
+   "step": 217,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 21,
+   "step": 226,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 22,
+   "step": 238,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 23,
+   "step": 252,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 24,
+   "step": 271,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 25,
+   "step": 278,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 26,
+   "step": 282,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 27,
+   "step": 290,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 28,
+   "step": 302,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 29,
+   "step": 317,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 30,
+   "step": 329,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 31,
+   "step": 336,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 32,
+   "step": 348,
+   "goals": [
+    false,
+    true
+   ]
+  },
+  {
+   "round": 33,
+   "step": 353,
+   "goals": [
+    true,
+    true
+   ]
+  }
+ ]
+}

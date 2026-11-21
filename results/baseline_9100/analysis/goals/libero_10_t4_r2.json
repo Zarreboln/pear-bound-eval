@@ -1,0 +1,346 @@
+{
+ "name": "libero_10_t4_r2",
+ "instruction": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+ "goals": [
+  "on porcelain_mug_1 plate_1",
+  "on white_yellow_mug_1 plate_2"
+ ],
+ "trace": [
+  {
+   "round": 0,
+   "step": 0,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 1,
+   "step": 10,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 2,
+   "step": 20,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 3,
+   "step": 27,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 4,
+   "step": 32,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 5,
+   "step": 49,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 6,
+   "step": 55,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 7,
+   "step": 69,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 8,
+   "step": 83,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 9,
+   "step": 95,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 10,
+   "step": 107,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 11,
+   "step": 143,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 12,
+   "step": 153,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 13,
+   "step": 187,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 14,
+   "step": 203,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 15,
+   "step": 227,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 16,
+   "step": 239,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 17,
+   "step": 250,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 18,
+   "step": 263,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 19,
+   "step": 269,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 20,
+   "step": 273,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 21,
+   "step": 283,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 22,
+   "step": 286,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 23,
+   "step": 289,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 24,
+   "step": 304,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 25,
+   "step": 310,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 26,
+   "step": 317,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 27,
+   "step": 331,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 28,
+   "step": 342,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 29,
+   "step": 352,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 30,
+   "step": 362,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 31,
+   "step": 370,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 32,
+   "step": 382,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 33,
+   "step": 390,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 34,
+   "step": 402,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 35,
+   "step": 415,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 36,
+   "step": 427,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 37,
+   "step": 437,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 38,
+   "step": 443,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 39,
+   "step": 458,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 40,
+   "step": 468,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 41,
+   "step": 486,
+   "goals": [
+    false,
+    false
+   ]
+  }
+ ]
+}

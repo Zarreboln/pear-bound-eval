@@ -1,0 +1,330 @@
+{
+ "name": "libero_10_t3_r9",
+ "instruction": "put the black bowl in the bottom drawer of the cabinet and close it",
+ "goals": [
+  "close white_cabinet_1_bottom_region",
+  "in akita_black_bowl_1 white_cabinet_1_bottom_region"
+ ],
+ "trace": [
+  {
+   "round": 0,
+   "step": 0,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 1,
+   "step": 12,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 2,
+   "step": 26,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 3,
+   "step": 29,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 4,
+   "step": 51,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 5,
+   "step": 62,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 6,
+   "step": 79,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 7,
+   "step": 88,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 8,
+   "step": 99,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 9,
+   "step": 108,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 10,
+   "step": 113,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 11,
+   "step": 116,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 12,
+   "step": 128,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 13,
+   "step": 146,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 14,
+   "step": 153,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 15,
+   "step": 162,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 16,
+   "step": 169,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 17,
+   "step": 173,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 18,
+   "step": 176,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 19,
+   "step": 181,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 20,
+   "step": 186,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 21,
+   "step": 195,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 22,
+   "step": 198,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 23,
+   "step": 210,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 24,
+   "step": 222,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 25,
+   "step": 230,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 26,
+   "step": 244,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 27,
+   "step": 248,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 28,
+   "step": 261,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 29,
+   "step": 270,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 30,
+   "step": 282,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 31,
+   "step": 286,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 32,
+   "step": 289,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 33,
+   "step": 296,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 34,
+   "step": 309,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 35,
+   "step": 322,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 36,
+   "step": 334,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 37,
+   "step": 339,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 38,
+   "step": 351,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 39,
+   "step": 355,
+   "goals": [
+    false,
+    false
+   ]
+  }
+ ]
+}

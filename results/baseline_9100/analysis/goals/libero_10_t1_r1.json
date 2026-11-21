@@ -1,0 +1,186 @@
+{
+ "name": "libero_10_t1_r1",
+ "instruction": "put both the cream cheese box and the butter in the basket",
+ "goals": [
+  "in cream_cheese_1 basket_1_contain_region",
+  "in butter_1 basket_1_contain_region"
+ ],
+ "trace": [
+  {
+   "round": 0,
+   "step": 0,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 1,
+   "step": 22,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 2,
+   "step": 27,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 3,
+   "step": 54,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 4,
+   "step": 62,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 5,
+   "step": 79,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 6,
+   "step": 98,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 7,
+   "step": 112,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 8,
+   "step": 121,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 9,
+   "step": 128,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 10,
+   "step": 141,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 11,
+   "step": 145,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 12,
+   "step": 157,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 13,
+   "step": 168,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 14,
+   "step": 179,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 15,
+   "step": 182,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 16,
+   "step": 197,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 17,
+   "step": 205,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 18,
+   "step": 220,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 19,
+   "step": 234,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 20,
+   "step": 241,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 21,
+   "step": 246,
+   "goals": [
+    true,
+    true
+   ]
+  }
+ ]
+}

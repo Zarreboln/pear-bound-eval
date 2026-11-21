@@ -1,0 +1,402 @@
+{
+ "name": "libero_10_t1_r4",
+ "instruction": "put both the cream cheese box and the butter in the basket",
+ "goals": [
+  "in cream_cheese_1 basket_1_contain_region",
+  "in butter_1 basket_1_contain_region"
+ ],
+ "trace": [
+  {
+   "round": 0,
+   "step": 0,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 1,
+   "step": 12,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 2,
+   "step": 20,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 3,
+   "step": 28,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 4,
+   "step": 55,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 5,
+   "step": 63,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 6,
+   "step": 81,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 7,
+   "step": 104,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 8,
+   "step": 118,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 9,
+   "step": 127,
+   "goals": [
+    false,
+    false
+   ]
+  },
+  {
+   "round": 10,
+   "step": 145,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 11,
+   "step": 157,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 12,
+   "step": 171,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 13,
+   "step": 185,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 14,
+   "step": 194,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 15,
+   "step": 214,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 16,
+   "step": 221,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 17,
+   "step": 226,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 18,
+   "step": 231,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 19,
+   "step": 236,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 20,
+   "step": 242,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 21,
+   "step": 247,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 22,
+   "step": 260,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 23,
+   "step": 272,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 24,
+   "step": 277,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 25,
+   "step": 282,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 26,
+   "step": 291,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 27,
+   "step": 294,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 28,
+   "step": 306,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 29,
+   "step": 311,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 30,
+   "step": 324,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 31,
+   "step": 338,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 32,
+   "step": 350,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 33,
+   "step": 367,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 34,
+   "step": 372,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 35,
+   "step": 380,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 36,
+   "step": 394,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 37,
+   "step": 406,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 38,
+   "step": 409,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 39,
+   "step": 412,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 40,
+   "step": 425,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 41,
+   "step": 439,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 42,
+   "step": 449,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 43,
+   "step": 454,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 44,
+   "step": 461,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 45,
+   "step": 465,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 46,
+   "step": 468,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 47,
+   "step": 495,
+   "goals": [
+    true,
+    false
+   ]
+  },
+  {
+   "round": 48,
+   "step": 509,
+   "goals": [
+    true,
+    false
+   ]
+  }
+ ]
+}
