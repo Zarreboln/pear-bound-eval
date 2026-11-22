@@ -26,31 +26,29 @@ the episodes that the condition solves and the full context does not, and the re
 
 ## Success
 
-| condition | success rate | Δ vs. full context | gained | lost | McNemar *p* | ended: success | ended: 520-step limit | ended: token budget | ended: parse failure |
-|---|---|---|---|---|---|---|---|---|---|
-| Full context | 30.0% [18, 44] | – | – | – | – | 15 | 0 | 35 | 0 |
-| *k* = 0, no summary | 4.0% [0, 10] | −26.0 [−38, −14] | 0 | 13 | < 0.001 | 2 | 30 | 0 | 18 |
-| *k* = 0, summary | 2.0% [0, 6] | −28.0 [−40, −16] | 0 | 14 | < 0.001 | 1 | 15 | 17 | 17 |
-| *k* = 1, no summary | 20.0% [10, 32] | −10.0 [−24, +4] | 5 | 10 | 0.30 | 10 | 36 | 3 | 1 |
-| ***k* = 1, summary** | **28.0% [16, 40]** | **−2.0 [−18, +14]** | 7 | 8 | 1.00 | 14 | 17 | 16 | 3 |
+| condition | success rate | Δ vs. full context | gained | lost | McNemar *p* | ended: 520-step limit | ended: token budget | ended: parse failure |
+|---|---|---|---|---|---|---|---|---|
+| Full context | 30.0% [18, 44] | – | – | – | – | 0 | 35 | 0 |
+| *k* = 0, no summary | 4.0% [0, 10] | −26.0 [−38, −14] | 0 | 13 | < 0.001 | 30 | 0 | 18 |
+| *k* = 0, summary | 2.0% [0, 6] | −28.0 [−40, −16] | 0 | 14 | < 0.001 | 15 | 17 | 17 |
+| *k* = 1, no summary | 20.0% [10, 32] | −10.0 [−24, +4] | 5 | 10 | 0.30 | 36 | 3 | 1 |
+| ***k* = 1, summary** | **28.0% [16, 40]** | **−2.0 [−18, +14]** | 7 | 8 | 1.00 | 17 | 16 | 3 |
 
 "Token budget" includes episodes that reached the 1M generated-token cap (*k* = 0 with summary: 17; *k* = 1 without
 summary: 1; *k* = 1 with summary: 10).
 
 ## Efficiency
 
-| condition | peak KV cache, mean / max (GiB) | generated tokens per episode | generated tokens per success | reasoning tokens per round | prefix-cache hit rate | preemptions |
-|---|---|---|---|---|---|---|
-| Full context | 12.30 / 15.68 | 183k | 0.61M | 6,159 | 91% | yes* |
-| *k* = 0, no summary | 3.71 / 9.41 | 313k | 7.83M | 8,674 | 94% | 0 |
-| *k* = 0, summary | 5.83 / 13.53 | 604k | 30.2M | 17,863 | 90% | 0 |
-| *k* = 1, no summary | 6.30 / 15.69 | 387k | 1.93M | 8,291 | 54% | 0 |
-| *k* = 1, summary | 7.93 / 15.69 | 473k | 1.69M | 13,012 | 46% | 0 |
+| condition | peak KV cache, mean / max (GiB) | generated tokens per episode | generated tokens per success | reasoning tokens per round | prefix-cache hit rate |
+|---|---|---|---|---|---|
+| Full context | 12.30 / 15.68 | 183k | 0.61M | 6,159 | 91% |
+| *k* = 0, no summary | 3.71 / 9.41 | 313k | 7.83M | 8,674 | 94% |
+| *k* = 0, summary | 5.83 / 13.53 | 604k | 30.2M | 17,863 | 90% |
+| *k* = 1, no summary | 6.30 / 15.69 | 387k | 1.93M | 8,291 | 54% |
+| *k* = 1, summary | 7.93 / 15.69 | 473k | 1.69M | 13,012 | 46% |
 
 - **Peak KV cache** is computed from the peak context length (64 KiB per token).
 - **Prefix-cache hit rate** is vLLM's own metric, averaged over its 10-second samples (not token-weighted).
-- **\*Preemptions:** the full-context test-set run (same 8×H100, two-replica setup) had 4.6 preemptions per minute on
-  average and up to 65; none of the method runs had any.
 
 ## Findings
 
@@ -58,8 +56,7 @@ summary: 1; *k* = 1 with summary: 10).
    episodes end with a parse failure: the model stops without writing an action block. With only empty thinking
    blocks in its history, the model drifts from its output format.
 2. **Keeping the previous round's reasoning with outcome summaries (*k* = 1, summary) preserves success**
-   (28% vs 30%, not significant) and reduces the mean peak KV cache by 36% (12.30 → 7.93 GiB). The method runs had
-   no preemptions.
+   (28% vs 30%, not significant) and reduces the mean peak KV cache by 36% (12.30 → 7.93 GiB).
 3. **The model generates more when its past reasoning is removed.** Reasoning per round rises by 35% to 2×, and with
    summaries the generated tokens per success are 2.8× the full context. Episodes no longer stop at the 256k budget,
    so they run longer, and some reach the 1M cap. The method currently trades memory for compute; the per-round reasoning cap is meant to
