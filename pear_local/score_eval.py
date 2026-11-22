@@ -4,12 +4,14 @@
 Needs <run>/analysis/episodes.json (analyze_run.py). Only the episodes of <episode file> count.
 Metrics (per episode, then mean over the set):
   success          LIBERO success; 95% CI by bootstrap over episodes
-  end reason       env success / env step limit (520) / budget (context full)
+  end reason       env success / env step limit (520) / budget (context full or generation cap) / parse (no
+                   usable json block)
   peak context     the most tokens the model saw at once: the episode's peak_context_tokens when the run logs it (a
                    managed context), else prompt + response (the official loop never drops anything)
   KV               peak context x 64 KiB (16 full-attention layers x 4 KV heads x 256 dims x K,V x bf16); the 48
                    linear-attention layers hold a fixed state per session, the same for every condition
-  generated        tokens the model wrote (reasoning + action + template): the compute a condition spends
+  generated        tokens the model wrote (logged by managed runs; else reasoning + action + template): the
+                   compute a condition spends
   reasoning/round  mean over rounds; also over the container tasks alone (3, 5, 9: the budget failures)
 With --ref, the paired comparison on the episodes both runs have: discordant pairs, exact McNemar p, bootstrap CI of
 the success difference.
@@ -50,7 +52,7 @@ def load(run, keys):
 def end_class(e):
     if e["success"]:
         return "success"
-    return "budget" if e["end_reason"] == "budget" else "step_limit"
+    return {"budget": "budget", "parse": "parse"}.get(e["end_reason"], "step_limit")
 
 
 def peak_context(e):
@@ -70,10 +72,10 @@ def summary(rows, rng):
     es = list(rows.values())
     succ = [float(e["success"]) for e in es]
     lo, hi = ci(succ, mean, rng)
-    gen = [e["reasoning"] + e["action"] + e["template"] for e in es]
+    gen = [e["generated"] if "generated" in e else e["reasoning"] + e["action"] + e["template"] for e in es]
     peak = [peak_context(e) for e in es]
     per_round = lambda sub: sum(e["reasoning"] for e in sub) / max(1, sum(e["rounds"] for e in sub))
-    ends = {c: sum(end_class(e) == c for e in es) for c in ["success", "step_limit", "budget"]}
+    ends = {c: sum(end_class(e) == c for e in es) for c in ["success", "step_limit", "budget", "parse"]}
     print(f"episodes {len(es)} | success {mean(succ):.1%} [{lo:.1%}, {hi:.1%}] | ends {ends}")
     print(f"peak context mean {mean(peak):,.0f} max {max(peak):,} tokens | KV mean {mean(peak) * KV_BYTES_PER_TOKEN / 2**30:.2f}"
           f" max {max(peak) * KV_BYTES_PER_TOKEN / 2**30:.2f} GiB per session")

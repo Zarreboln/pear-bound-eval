@@ -2,7 +2,7 @@
 # A PEAR checkpoint on a LIBERO episode file, official full-context setting, on 4 H100s = one TP4 replica: official
 # GPU install check (install.sh libero_run), then a single-node Ray cluster (this node = head, rollout role), then the
 # official examples/eval/eval_libero.sh with EPISODES pointed at the file.
-#   sbatch --export=ALL,MODEL_FILE=<pear_local model file>,EPISODES=<episode file>,TAG=<run name> eval_long.sbatch
+#   sbatch --export=ALL,MODEL_FILE=<pear_local model file>,EPISODES=<episode file>,TAG=<run name>[,CTX_K=..,CTX_SUMMARY=..,CTX_CAP=..] eval_long.sbatch
 # MODEL is the downloaded directory of MODEL_FILE's repository ($WORK_DIR/models/<repo name>).
 # --requeue: a preempted job restarts with the same job id; add --partition/--qos for your cluster.
 #SBATCH --job-name=pear_eval
@@ -41,7 +41,17 @@ mkdir -p $RUN/val_dumps
 LEFT=$(python3 ~/code/pear_local/resume_episodes.py prepare $RUN $EPISODES $RUN/episodes_left.json)
 echo "[$(date -Is)] restart_count=${SLURM_RESTART_COUNT:-0} episodes left: $LEFT"
 if [ "$LEFT" -gt 0 ]; then
-  ROLLOUT_NNODES=1 EPISODES=$RUN/episodes_left.json EVAL_STEP=0 RUN=$RUN bash examples/eval/eval_libero.sh
+  # managed context (context_loop.py): CTX_K set selects the ctx_agent loop; its settings reach the workers as Ray env vars
+  # (quoted: Ray takes string values only)
+  CTX_ARGS=()
+  if [ -n "${CTX_K:-}" ]; then
+    E=+ray_kwargs.ray_init.runtime_env.env_vars
+    CTX_ARGS=(actor_rollout_ref.rollout.agent.agent_loop_config_path=$HOME/code/pear_local/ctx_agent_loop.yaml
+              actor_rollout_ref.rollout.agent.default_agent_loop=ctx_agent
+              "$E.CTX_K='$CTX_K'" "$E.CTX_SUMMARY='${CTX_SUMMARY:-0}'" "$E.CTX_CAP='${CTX_CAP:-0}'" "$E.CTX_GEN_CAP='${CTX_GEN_CAP:-1000000}'")
+    echo "ctx: k=$CTX_K summary=${CTX_SUMMARY:-0} cap=${CTX_CAP:-0} gen_cap=${CTX_GEN_CAP:-1000000}"
+  fi
+  ROLLOUT_NNODES=1 EPISODES=$RUN/episodes_left.json EVAL_STEP=0 RUN=$RUN bash examples/eval/eval_libero.sh "${CTX_ARGS[@]}"
   echo "[$(date -Is)] eval rc=$? sec=$(( $(date +%s)-s ))"
 fi
 python3 ~/code/pear_local/resume_episodes.py merge $RUN

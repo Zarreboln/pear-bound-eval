@@ -1,0 +1,6 @@
+# context-managed PEAR agent loop (context_loop.py, linked into pear/agent_loop/); eval_long.sbatch selects ctx_agent
+# when CTX_K is set
+- name: pear_agent
+  _target_: pear.agent_loop.agent_loop.PearAgentLoop
+- name: ctx_agent
+  _target_: pear.agent_loop.context_loop.ContextAgentLoop

@@ -45,11 +45,16 @@ for line in open(os.path.join(run, "val_dumps", "eval_0.jsonl")):
         images=len(obs) * FRAMES_PER_OBS * IMAGE_TOKENS,
     )
     c["template"] = max(0, n(out) - c["reasoning"] - c["action"] - c["obs_text"])
+    ctx = ep.get("ctx")
+    if ctx:  # managed context (context_loop.py): the dump holds the final managed prompt, the record the full counts
+        c = Counter(reasoning=sum(ctx["reasoning"]))
     rows.append({
         "task": ep["env"]["task_id"], "trial": ep["env"]["trial_id"], "success": ep["success"],
         "end_reason": end.get("end_reason", "?"), "rounds": ep["num_chunks"], "steps": ep["executed_steps"],
         "prompt_tokens": n(r["input"]) + FRAMES_PER_OBS * IMAGE_TOKENS, "response_tokens": sum(c.values()),
         **c, "uid": r["uid"], "episode_uid": ep["uid"],
+        **({"peak_context_tokens": ctx["peak"], "generated": sum(ctx["generated"]), "gen_capped": ctx["gen_capped"],
+            "evicted_rounds": ctx["evicted_rounds"]} if ctx else {}),
     })
 
 rows.sort(key=lambda x: (x["task"], x["trial"]))
@@ -60,11 +65,11 @@ cols = ["task", "trial", "success", "end_reason", "rounds", "steps", "response_t
         "obs_text", "images", "template"]
 print("\t".join(cols))
 for x in rows:
-    print("\t".join(str(x[k]) for k in cols))
+    print("\t".join(str(x.get(k, "")) for k in cols))
 tot = Counter()
 for x in rows:
-    tot.update({k: x[k] for k in ["reasoning", "action", "obs_text", "images", "template", "response_tokens"]})
-print("\nshare of response tokens:", {k: f"{tot[k] / tot['response_tokens']:.1%}" for k in
+    tot.update({k: x.get(k, 0) for k in ["reasoning", "action", "obs_text", "images", "template", "response_tokens"]})
+print("\nshare of response tokens:", {k: f"{tot[k] / max(1, tot['response_tokens']):.1%}" for k in
                                      ["reasoning", "action", "obs_text", "images", "template"]})
 print("end reasons:", Counter(x["end_reason"] for x in rows), "| success:", sum(x["success"] for x in rows), "/", len(rows))
 for reason in ["env", "budget"]:
