@@ -103,9 +103,6 @@ sbatch --gres=gpu:8 \
 |---|---|
 | *k* = 0, no summary | 24.0 |
 | *k* = 0, summary | 31.3 |
-| *k* = 1, no summary | 46.7 (preempted once) |
-| *k* = 1, summary | 47.4 (preempted once) |
+| *k* = 1, no summary | 46.7 |
+| *k* = 1, summary | 47.4 |
 | **Total** | **149.4** |
-
-A preempted job restarts and runs only the unfinished episodes, but the episodes in flight at preemption are run
-again, which is why the *k* = 1 runs cost more.
