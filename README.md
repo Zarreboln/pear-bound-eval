@@ -8,7 +8,7 @@ This repository contains:
 - the full-context baseline and its failure analysis;
 - the development and test episode sets;
 - the implementation of the context-management method (`pear_local/context_loop.py`);
-- the results of the first method runs;
+- one page per experiment in [`experiments/`](experiments/);
 - the scoring script used to compare conditions.
 
 ## Status (2026-11-22)
@@ -18,7 +18,7 @@ This repository contains:
 | Full-context baseline | Run 9100 (initial states 0–9): 50% success, 35% ended by the token budget. Test set (initial states 10–19): 54% success, 36% ended by the budget. The paper reports 53.2% / 33%. |
 | Failure analysis | Budget failures concentrate on the tasks that place an object into a closed container (tasks 3, 5, 9). The cause is very long reasoning in single rounds. |
 | Method | Implemented in `pear_local/context_loop.py`: reasoning eviction with the last *k* rounds kept, per-round outcome summaries, and a context cap *C*. The per-round reasoning cap is not implemented yet. |
-| Development-set runs | *k* ∈ {0, 1} × with / without summaries: done. Results [below](#results-on-the-development-set). |
+| Development-set runs | *k* ∈ {0, 1} × with / without summaries: done. See [experiments/](experiments/). |
 | Test-set runs | Full context: done. Method: not run yet. |
 
 ## Setup
@@ -134,78 +134,13 @@ cap of 1M generated tokens.
 Each episode record gets a `ctx` field: the settings, peak context, generated and reasoning tokens per round, and the
 context length at every rebuild. [`analyze_run.py`](pear_local/analyze_run.py) reads it.
 
-## Results on the development set
-
-50 episodes; reference: full context (run 9100) on the same episodes. Paired comparison: bootstrap 95% CI of the
-success difference and the exact McNemar test. "Gained" and "lost" count the episodes that the condition solves and
-the full context does not, and the reverse.
-
-### Success
-
-| condition | success rate | Δ vs. full context | gained | lost | McNemar *p* | ended: success | ended: 520-step limit | ended: token budget | ended: parse failure |
-|---|---|---|---|---|---|---|---|---|---|
-| Full context | 30.0% [18, 44] | – | – | – | – | 15 | 0 | 35 | 0 |
-| *k* = 0, no summary | 4.0% [0, 10] | −26.0 [−38, −14] | 0 | 13 | < 0.001 | 2 | 30 | 0 | 18 |
-| *k* = 0, summary | 2.0% [0, 6] | −28.0 [−40, −16] | 0 | 14 | < 0.001 | 1 | 15 | 17 | 17 |
-| *k* = 1, no summary | 20.0% [10, 32] | −10.0 [−24, +4] | 5 | 10 | 0.30 | 10 | 36 | 3 | 1 |
-| ***k* = 1, summary** | **28.0% [16, 40]** | **−2.0 [−18, +14]** | 7 | 8 | 1.00 | 14 | 17 | 16 | 3 |
-
-"Token budget" includes episodes that reached the 1M generated-token cap (*k* = 0 with summary: 17; *k* = 1 without
-summary: 1; *k* = 1 with summary: 10).
-
-### Efficiency
-
-| condition | peak KV cache, mean / max (GiB) | generated tokens per episode | generated tokens per success | reasoning tokens per round | prefix-cache hit rate | preemptions |
-|---|---|---|---|---|---|---|
-| Full context | 12.30 / 15.68 | 183k | 0.61M | 6,159 | 91% | yes* |
-| *k* = 0, no summary | 3.71 / 9.41 | 313k | 7.83M | 8,674 | 94% | 0 |
-| *k* = 0, summary | 5.83 / 13.53 | 604k | 30.2M | 17,863 | 90% | 0 |
-| *k* = 1, no summary | 6.30 / 15.69 | 387k | 1.93M | 8,291 | 54% | 0 |
-| *k* = 1, summary | 7.93 / 15.69 | 473k | 1.69M | 13,012 | 46% | 0 |
-
-- **Peak KV cache** is computed from the peak context length (64 KiB per token).
-- **Prefix-cache hit rate** is vLLM's own metric, averaged over its 10-second samples (not token-weighted).
-- **\*Preemptions:** the full-context test-set run (same 8×H100, two-replica setup) had 4.6 preemptions per minute on
-  average and up to 65; none of the method runs had any.
-
-### Findings
-
-1. **Removing all past reasoning (*k* = 0) breaks the agent.** Success drops from 30% to 2–4%. About a third of the
-   episodes end with a parse failure: the model stops without writing an action block. With only empty thinking
-   blocks in its history, the model drifts from its output format.
-2. **Keeping the previous round's reasoning with outcome summaries (*k* = 1, summary) preserves success**
-   (28% vs 30%, not significant) and reduces the mean peak KV cache by 36% (12.30 → 7.93 GiB). The method runs had
-   no preemptions.
-3. **The model generates more when its past reasoning is removed.** Reasoning per round rises by 35% to 2×, and with
-   summaries the generated tokens per success are 2.8× the full context. Episodes no longer stop at the 256k budget, so they run longer, and
-   some reach the 1M cap. The method currently trades memory for compute; the per-round reasoning cap is meant to
-   address this.
-4. **Evicting reasoning lowers prefix-cache reuse.** With *k* = 1, each eviction edits the middle of the context, so
-   everything after it is recomputed, and the hit rate falls from 91% to about 50%.
-
-### Data and logs
-
-| condition | results | per-round log |
-|---|---|---|
-| *k* = 0, no summary (job 9452) | [`results/dev_k0_nosummary_9452/`](results/dev_k0_nosummary_9452/) | [`turns.jsonl.gz`](results/dev_k0_nosummary_9452/turns.jsonl.gz) |
-| *k* = 0, summary (job 9453) | [`results/dev_k0_summary_9453/`](results/dev_k0_summary_9453/) | [`turns.jsonl.gz`](results/dev_k0_summary_9453/turns.jsonl.gz) |
-| *k* = 1, no summary (job 9454) | [`results/dev_k1_nosummary_9454/`](results/dev_k1_nosummary_9454/) | [`turns.jsonl.gz`](results/dev_k1_nosummary_9454/turns.jsonl.gz) |
-| *k* = 1, summary (job 9455) | [`results/dev_k1_summary_9455/`](results/dev_k1_summary_9455/) | [`turns.jsonl.gz`](results/dev_k1_summary_9455/turns.jsonl.gz) |
-
-Each results folder has:
-
-- `analysis/episodes.json`: per-episode outcome, end reason, peak context and token counts;
-- `eval_0.jsonl.gz`: the eval dump. For the method runs it holds the final managed context, not the full history;
-- `turns.jsonl.gz`: every round's full generated text (reasoning, summary and action), one JSON line per round.
-
-Compute: 168.2 GPU-hours for the five runs on this page after run 9100 (*k* = 0: 24.0 and 31.3; *k* = 1: 46.7
-and 47.4, each including one preemption; test-set full context: 18.8).
-
 ## Results on the test set
 
 | condition | success rate | ended by budget | peak KV cache, mean / max (GiB) | generated tokens per episode | data |
 |---|---|---|---|---|---|
 | Full context (job 9456) | 54.0% [44, 64] | 36% | 8.19 / 15.68 | 116k | [`results/test_full_9456/`](results/test_full_9456/) |
+
+The run took 2 h 21 min on 8×H100 (18.8 GPU-hours).
 
 ## Next steps
 
@@ -296,7 +231,8 @@ Notes:
 | [`pear_local/failure_summary.py`](pear_local/failure_summary.py) | subgoal progress, grasps and stopped moves |
 | [`pear_local/peek_rounds.py`](pear_local/peek_rounds.py) | prints the action, outcome and reasoning tail of chosen rounds |
 | `pear_local/build_cpu.sh` | builds the LIBERO and verl environments on a CPU node |
-| [`results/`](results/) | all runs on this page |
+| [`experiments/`](experiments/) | one page per experiment: setup, results, findings, data and logs |
+| [`results/`](results/) | the data of every run |
 
 Earlier, smaller runs are also included: `eval_libero_long30.sbatch` (30 episodes with the general PEAR checkpoint)
 and `eval_libero40.sbatch`.
