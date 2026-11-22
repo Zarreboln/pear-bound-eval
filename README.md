@@ -137,19 +137,20 @@ context length at every rebuild. [`analyze_run.py`](pear_local/analyze_run.py) r
 ## Results on the development set
 
 50 episodes; reference: full context (run 9100) on the same episodes. Paired comparison: bootstrap 95% CI of the
-success difference and the exact McNemar test.
+success difference and the exact McNemar test. "Gained" and "lost" count the episodes that the condition solves and
+the full context does not, and the reverse.
 
 ### Success
 
-| condition | success rate | Δ vs. full context | gained / lost | McNemar *p* | end reasons (success / step limit / budget / parse failure) |
-|---|---|---|---|---|---|
-| Full context | 30.0% [18, 44] | – | – | – | 15 / 0 / 35 / 0 |
-| *k* = 0, no summary | 4.0% [0, 10] | −26.0 [−38, −14] | 0 / 13 | < 0.001 | 2 / 30 / 0 / 18 |
-| *k* = 0, summary | 2.0% [0, 6] | −28.0 [−40, −16] | 0 / 14 | < 0.001 | 1 / 15 / 17 / 17 |
-| *k* = 1, no summary | 20.0% [10, 32] | −10.0 [−24, +4] | 5 / 10 | 0.30 | 10 / 36 / 3 / 1 |
-| ***k* = 1, summary** | **28.0% [16, 40]** | **−2.0 [−18, +14]** | 7 / 8 | 1.00 | 14 / 17 / 16 / 3 |
+| condition | success rate | Δ vs. full context | gained | lost | McNemar *p* | ended: success | ended: 520-step limit | ended: token budget | ended: parse failure |
+|---|---|---|---|---|---|---|---|---|---|
+| Full context | 30.0% [18, 44] | – | – | – | – | 15 | 0 | 35 | 0 |
+| *k* = 0, no summary | 4.0% [0, 10] | −26.0 [−38, −14] | 0 | 13 | < 0.001 | 2 | 30 | 0 | 18 |
+| *k* = 0, summary | 2.0% [0, 6] | −28.0 [−40, −16] | 0 | 14 | < 0.001 | 1 | 15 | 17 | 17 |
+| *k* = 1, no summary | 20.0% [10, 32] | −10.0 [−24, +4] | 5 | 10 | 0.30 | 10 | 36 | 3 | 1 |
+| ***k* = 1, summary** | **28.0% [16, 40]** | **−2.0 [−18, +14]** | 7 | 8 | 1.00 | 14 | 17 | 16 | 3 |
 
-"Budget" includes episodes that reached the 1M generated-token cap (*k* = 0 with summary: 17; *k* = 1 without
+"Token budget" includes episodes that reached the 1M generated-token cap (*k* = 0 with summary: 17; *k* = 1 without
 summary: 1; *k* = 1 with summary: 10).
 
 ### Efficiency
