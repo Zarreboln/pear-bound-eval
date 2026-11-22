@@ -1,4 +1,4 @@
-# Experiment: how many rounds of reasoning to keep (*k*)
+# Experiment: kept reasoning rounds (*k*) and outcome summaries
 
 **Question.** PEAR keeps the reasoning of every past round in its context. If we keep the observations and actions of
 every round but remove the reasoning of all rounds except the last *k*, does PEAR still succeed, and how much memory
